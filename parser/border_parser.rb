@@ -1,4 +1,4 @@
-class BorderPointParser
+class BorderParser
 
 
 def initialize(doc)
