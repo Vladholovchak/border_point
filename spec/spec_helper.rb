@@ -1,5 +1,9 @@
 require 'vcr'
-# Dir.glob(File.join('parser', '**', '*.rb'), &method(:require_relative))
+require 'nokogiri'
+require 'open-uri'
+require 'pry'
+require 'awesome_print'
+require 'parser'
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
