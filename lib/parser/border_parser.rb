@@ -1,4 +1,3 @@
-# parser
 class BorderParser
   def initialize(doc)
     @doc = doc
