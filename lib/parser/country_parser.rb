@@ -3,7 +3,6 @@ require 'nokogiri'
 require 'open-uri'
 
 class CountriesParser
-
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
 
   def initialize; end
@@ -14,23 +13,22 @@ class CountriesParser
 
   def call
     COUNTRIES_CODES.each do |country_code|
-    parse_country(country_code)
+      parse_country(country_code)
     end
+  end
 
-    end
-
-  private
+private
 
   def parse_country(country_code)
-    input_html = making_url(country_code, 'i')
-    output_html = making_url(country_code, 'o')
-    input_page = Nokogiri::HTML(open(input_html))
-    output_page = Nokogiri::HTML(open(output_html))
-    input  = BorderParser.new(input_page).call
-    output = BorderParser.new(output_page).call
-    ap input
-    ap output
+    input_info = parse_direction('i', country_code)
+    output_info = parse_direction('o', country_code)
+    { country_code: country_code, input: input_info, output: output_info }
+  end
 
+  def parse_direction(direction, country_code)
+    html = making_url(country_code, direction)
+    page = Nokogiri::HTML(open(html))
+    BorderParser.new(page).call
   end
 
 end
