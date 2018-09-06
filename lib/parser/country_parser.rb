@@ -7,17 +7,17 @@ class CountriesParser
 
   def initialize; end
 
-  def making_url(country, direction)
-    "http://kordon.sfs.gov.ua/uk/home/countries/#{country}/#{direction}"
-  end
-
   def call
     COUNTRIES_CODES.each do |country_code|
       parse_country(country_code)
     end
   end
 
-private
+  private
+
+  def make_url(country, direction)
+    "http://kordon.sfs.gov.ua/uk/home/countries/#{country}/#{direction}"
+  end
 
   def parse_country(country_code)
     input_info = parse_direction('i', country_code)
@@ -26,9 +26,8 @@ private
   end
 
   def parse_direction(direction, country_code)
-    html = making_url(country_code, direction)
+    html = make_url(country_code, direction)
     page = Nokogiri::HTML(open(html))
     BorderParser.new(page).call
   end
-
 end
