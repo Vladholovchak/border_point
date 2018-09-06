@@ -57,3 +57,7 @@ Style/RescueStandardError:
 
 Style/EmptyLambdaParameter:
   Enabled: false
+
+Security/Open:
+  Enabled: false
+
