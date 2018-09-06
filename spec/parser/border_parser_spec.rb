@@ -10,7 +10,7 @@ describe '#call' do
     expect(container.count).to eq(5)
   end
   context 'point, car, truck' do
-    let(:point) { "Митний пост \"Лужанка\", пункт пропуску \"Лужанка – Берегшурань\""}
+    let(:point) { 'Митний пост "Лужанка", пункт пропуску "Лужанка – Берегшурань"' }
     let(:car_time) { '00:31' }
     let(:truck_time) { 'Інформація відсутня' }
     it 'returns parsed border from page' do
@@ -21,4 +21,3 @@ describe '#call' do
     end
   end
 end
-
