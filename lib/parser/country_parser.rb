@@ -1,16 +1,21 @@
 require_relative 'border_parser'
 require 'nokogiri'
 require 'open-uri'
+require 'redis'
 
 class CountriesParser
+  attr_reader :country_info
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
-
   def initialize; end
 
   def call
+    redis = Redis.new(host: 'localhost', port: 6379)
     COUNTRIES_CODES.each do |country_code|
-      parse_country(country_code)
+      a = parse_country(country_code)
+      redis.set(country_code, a)
     end
+    # for test keys in DB
+    @country_info = redis.get("pl")
   end
 
   private
