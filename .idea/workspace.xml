@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="382611ed-7cb7-44c2-8b5b-f5631ad255ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/schedule.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/country_parser.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/country_parser.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/main.rb" afterDir="false" />
     </list>
@@ -95,12 +95,12 @@
       <workItem from="1553635163934" duration="26000" />
       <workItem from="1553635229518" duration="34000" />
       <workItem from="1553635285791" duration="125000" />
-      <workItem from="1553635740849" duration="920000" />
+      <workItem from="1553635740849" duration="1101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2564000" />
+    <option name="totallyTimeSpent" value="2745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="260" y="43" width="1400" height="927" extended-state="0" />

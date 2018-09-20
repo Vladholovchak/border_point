@@ -4,18 +4,17 @@ require 'open-uri'
 require 'redis'
 
 class CountriesParser
-  attr_reader :country_info
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
-  def initialize; end
+
+  def initialize
+    @redis = Redis.new
+  end
 
   def call
-    redis = Redis.new(host: 'localhost', port: 6379)
     COUNTRIES_CODES.each do |country_code|
-      a = parse_country(country_code)
-      redis.set(country_code, a)
+      country_info = parse_country(country_code)
+      @redis.set(country_code, country_info)
     end
-    # for test keys in DB
-    @country_info = redis.get("pl")
   end
 
   private
@@ -27,7 +26,7 @@ class CountriesParser
   def parse_country(country_code)
     input_info = parse_direction('i', country_code)
     output_info = parse_direction('o', country_code)
-    { country_code: country_code, input: input_info, output: output_info }
+    { country_code: country_code, input: input_info, output: output_info, updated_at: Time.zone.now }
   end
 
   def parse_direction(direction, country_code)
