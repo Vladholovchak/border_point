@@ -1,15 +1,19 @@
 require_relative 'border_parser'
 require 'nokogiri'
 require 'open-uri'
+require 'redis'
 
 class CountriesParser
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
 
-  def initialize; end
+  def initialize
+    @redis = Redis.new
+  end
 
   def call
     COUNTRIES_CODES.each do |country_code|
-      parse_country(country_code)
+      country_info = parse_country(country_code)
+      @redis.set(country_code, country_info)
     end
   end
 
@@ -22,7 +26,7 @@ class CountriesParser
   def parse_country(country_code)
     input_info = parse_direction('i', country_code)
     output_info = parse_direction('o', country_code)
-    { country_code: country_code, input: input_info, output: output_info }
+    { country_code: country_code, input: input_info, output: output_info, updated_at: Time.zone.now }
   end
 
   def parse_direction(direction, country_code)
