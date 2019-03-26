@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="382611ed-7cb7-44c2-8b5b-f5631ad255ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/schedule.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/country_parser.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/country_parser.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="305">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -95,15 +92,16 @@
       <workItem from="1553635163934" duration="26000" />
       <workItem from="1553635229518" duration="34000" />
       <workItem from="1553635285791" duration="125000" />
-      <workItem from="1553635740849" duration="1101000" />
+      <workItem from="1553635740849" duration="2494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2745000" />
+    <option name="totallyTimeSpent" value="4138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="260" y="43" width="1400" height="927" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26804122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -163,8 +161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="305">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
