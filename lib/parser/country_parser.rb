@@ -33,7 +33,7 @@ class CountriesParser
 
   def parse_direction(direction, country_code)
     html = make_url(country_code, direction)
-    page = Nokogiri::HTML(open(html))
+      page = Nokogiri::HTML(open(html))
     BorderParser.new(page).call
   end
 end
