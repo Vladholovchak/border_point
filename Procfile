@@ -1,0 +1,1 @@
+web: bundle exec bin/rake telegram:bot:poller
