@@ -21,3 +21,4 @@ spec/examples.txt
 /app.yaml
 /bot.log
 Gemfile.lock
+/.idea/workspace.xml
