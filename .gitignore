@@ -17,6 +17,7 @@ config/secrets.yml
 
 spec/examples.txt
 
-/.idea/
+/.idea/*
 /app.yaml
 /bot.log
+Gemfile.lock
