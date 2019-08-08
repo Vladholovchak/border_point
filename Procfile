@@ -1,1 +1,1 @@
-worker: bundle exec bin/rake telegram:bot:poller
+rake: telegram:bot:poller
