@@ -1,1 +1,1 @@
-bot: rake telegram:bot:poller
+bot: bin/rake telegram:bot:poller
