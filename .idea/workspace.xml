@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75cae5a2-5c19-4479-aef0-479d81f8ad77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/border_point.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/border_point.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="75cae5a2-5c19-4479-aef0-479d81f8ad77" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/secrets.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="308">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -136,6 +133,11 @@
               <item name="Border_parser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/Border_parser" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Border_parser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projects/Border_parser" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="db" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -217,12 +219,12 @@
       <workItem from="1560227403755" duration="2409000" />
       <workItem from="1560799155823" duration="605000" />
       <workItem from="1565192865070" duration="3230000" />
-      <workItem from="1565270342106" duration="620000" />
+      <workItem from="1565270342106" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28867000" />
+    <option name="totallyTimeSpent" value="30042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="34" width="1853" height="1046" extended-state="6" />
@@ -241,7 +243,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32990867" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4303653" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24771689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32934132" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.2625571" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -381,13 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -463,10 +458,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/secrets.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state relative-caret-position="308">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
         </state>
       </provider>
     </entry>
