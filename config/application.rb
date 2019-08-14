@@ -27,5 +27,6 @@ module BorderPoint
     # config.i18n.default_locale = :de
     config.assets.initialize_on_precompile = false
     config.assets.enabled = false
+    config.telegram_updates_controller.session_store = :redis_store, {expires_in: 1.month}
   end
 end
