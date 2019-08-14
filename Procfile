@@ -1,1 +1,1 @@
-bot: bin/rake telegram:bot:poller
+bot: bin/rake telegram:bot:set_webhook RAILS_ENV=production
