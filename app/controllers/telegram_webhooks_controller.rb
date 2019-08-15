@@ -34,8 +34,9 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
   def beautiful_output
     direction = session.delete(:direction)
     country = session.delete(:country)
-    a = Redis.new.get(country)
-    ob = JSON.parse(a)
+    redis = Redis.new(ENV['REDIS_URL'])
+    redis.get(country)
+    ob = JSON.parse(redis)
     arr = ob[direction]
     arr.sort_by!{ |t| t["time_car"] }
     flags = { 'hu' => "\u{1F1ED}\u{1F1FA}",

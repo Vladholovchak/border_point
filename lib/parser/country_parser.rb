@@ -6,10 +6,10 @@ require 'json'
 
 class CountriesParser
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
+  REDIS_URL = ENV['REDIS_URL']
 
   def initialize
-    @redis = Redis.new
-
+    @redis = Redis.new(url:"#{REDIS_URL}")
   end
 
   def call
