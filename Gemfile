@@ -52,6 +52,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-its'
   gem 'spring-commands-rspec'
+  gem 'sqlite3', '~> 1.3.0'
   gem 'awesome_print'
   gem 'hirb'
   gem 'pry'
@@ -59,4 +60,5 @@ group :development, :test do
   gem 'pry-nav', platforms: [:jruby]
   gem 'pry-doc', platforms: [:mri]
   gem 'pry-rails'
+  gem  'database_yml'
 end
