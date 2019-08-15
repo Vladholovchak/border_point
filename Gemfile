@@ -48,6 +48,7 @@ end
 
 gem 'telegram-bot', '>= 0.14'
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'rspec-its'
   gem 'spring-commands-rspec'
