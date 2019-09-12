@@ -3,14 +3,15 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
-gem 'redis'
+gem 'redis-rails', '~> 4'
 gem 'nokogiri'
+gem 'puma'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+# gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+# gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
@@ -47,9 +48,11 @@ end
 
 gem 'telegram-bot', '>= 0.14'
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'rspec-its'
   gem 'spring-commands-rspec'
+  gem 'sqlite3', '~> 1.3.0'
   gem 'awesome_print'
   gem 'hirb'
   gem 'pry'
@@ -57,4 +60,5 @@ group :development, :test do
   gem 'pry-nav', platforms: [:jruby]
   gem 'pry-doc', platforms: [:mri]
   gem 'pry-rails'
+  gem  'database_yml'
 end

@@ -13,7 +13,7 @@ describe '#call' do
     let(:point) { 'Митний пост "Лужанка", пункт пропуску "Лужанка – Берегшурань"' }
     let(:car_time) { '00:31' }
     let(:truck_time) { 'Інформація відсутня' }
-    it 'returns parsed border from page' do
+    it 'returns true info from page' do
       container = subject.call
       tested = container[1]
       origin = [point, car_time, truck_time]

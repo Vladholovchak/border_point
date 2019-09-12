@@ -6,10 +6,10 @@ require 'json'
 
 class CountriesParser
   COUNTRIES_CODES = %w[md ro hu sk pl by ru kr].freeze
+  REDIS_URL = ENV['REDIS_URL']
 
   def initialize
-    @redis = Redis.new
-
+    @redis = Redis.new(url:"#{REDIS_URL}")
   end
 
   def call
@@ -33,7 +33,7 @@ class CountriesParser
 
   def parse_direction(direction, country_code)
     html = make_url(country_code, direction)
-      page = Nokogiri::HTML(open(html))
+    page = Nokogiri::HTML(open(html))
     BorderParser.new(page).call
   end
 end
